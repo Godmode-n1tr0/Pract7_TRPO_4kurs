@@ -3,18 +3,18 @@
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
       Title="Добавление лекарства" Background="White">
     <ScrollViewer VerticalScrollBarVisibility="Auto">
-        <StackPanel Width="380" HorizontalAlignment="Left" Margin="15" IsEnabled="{Binding CanWork}">
+        <StackPanel Width="380" HorizontalAlignment="Left" Margin="15">
             <Button Content="Назад" Click="Back_Click" HorizontalAlignment="Left" Margin="0,0,0,15"/>
             <TextBlock Text="Добавление лекарства" FontSize="16" Margin="0,0,0,10"/>
             <TextBlock Text="Название"/>
-            <TextBox Text="{Binding NameText, UpdateSourceTrigger=PropertyChanged}" Margin="0,0,0,10"/>
+            <TextBox Text="{Binding Name, UpdateSourceTrigger=PropertyChanged}" Margin="0,0,0,10"/>
             <TextBlock Text="Производитель"/>
-            <TextBox Text="{Binding ManufacturerText, UpdateSourceTrigger=PropertyChanged}" Margin="0,0,0,10"/>
+            <TextBox Text="{Binding Manufacturer, UpdateSourceTrigger=PropertyChanged}" Margin="0,0,0,10"/>
             <TextBlock Text="Цена"/>
-            <TextBox Text="{Binding PriceText, UpdateSourceTrigger=PropertyChanged}" Margin="0,0,0,10"/>
+            <TextBox Text="{Binding Price, UpdateSourceTrigger=PropertyChanged}" Margin="0,0,0,10"/>
             <TextBlock Text="Срок годности (ГГГГ-ММ-ДД)"/>
-            <TextBox Text="{Binding DateText, UpdateSourceTrigger=PropertyChanged}" Margin="0,0,0,10"/>
-            <CheckBox Content="Есть в наличии" IsChecked="{Binding Available}" Margin="0,0,0,15"/>
+            <TextBox Text="{Binding Date, UpdateSourceTrigger=PropertyChanged}" Margin="0,0,0,10"/>
+            <CheckBox Content="Есть в наличии" IsChecked="{Binding IsAvailable}" Margin="0,0,0,15"/>
             <WrapPanel>
                 <Button Content="Добавить" Click="Create_Click" Margin="0,0,10,10"/>
             </WrapPanel>

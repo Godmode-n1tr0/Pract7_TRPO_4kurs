@@ -3,24 +3,22 @@
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
       Title="Изменение лекарства" Background="White">
     <ScrollViewer VerticalScrollBarVisibility="Auto">
-        <StackPanel Width="380" HorizontalAlignment="Left" Margin="15" IsEnabled="{Binding CanWork}">
+        <StackPanel Width="380" HorizontalAlignment="Left" Margin="15">
             <Button Content="Назад" Click="Back_Click" HorizontalAlignment="Left" Margin="0,0,0,15"/>
             <TextBlock Text="Изменение лекарства" FontSize="16" Margin="0,0,0,10"/>
-            <TextBlock Text="{Binding CurrentId, StringFormat='Id: {0}'}" Margin="0,0,0,10"/>
-            <TextBlock Text="Для частичного изменения отметь нужные поля." TextWrapping="Wrap" Margin="0,0,0,10"/>
-            <CheckBox Content="Название" IsChecked="{Binding UseName}"/>
-            <TextBox Text="{Binding NameText, UpdateSourceTrigger=PropertyChanged}" Margin="0,0,0,10"/>
-            <CheckBox Content="Производитель" IsChecked="{Binding UseManufacturer}"/>
-            <TextBox Text="{Binding ManufacturerText, UpdateSourceTrigger=PropertyChanged}" Margin="0,0,0,10"/>
-            <CheckBox Content="Цена" IsChecked="{Binding UsePrice}"/>
-            <TextBox Text="{Binding PriceText, UpdateSourceTrigger=PropertyChanged}" Margin="0,0,0,10"/>
-            <CheckBox Content="Срок годности (ГГГГ-ММ-ДД)" IsChecked="{Binding UseDate}"/>
-            <TextBox Text="{Binding DateText, UpdateSourceTrigger=PropertyChanged}" Margin="0,0,0,10"/>
-            <CheckBox Content="Изменить наличие (PATCH)" IsChecked="{Binding UseAvailable}" Margin="0,0,0,5"/>
-            <CheckBox Content="Есть в наличии" IsChecked="{Binding Available}" Margin="0,0,0,15"/>
+            <TextBlock Text="«Изменить часть» отправит только изменённые поля." TextWrapping="Wrap" Margin="0,0,0,10"/>
+            <TextBlock Text="Название"/>
+            <TextBox Text="{Binding Name, UpdateSourceTrigger=PropertyChanged}" Margin="0,0,0,10"/>
+            <TextBlock Text="Производитель"/>
+            <TextBox Text="{Binding Manufacturer, UpdateSourceTrigger=PropertyChanged}" Margin="0,0,0,10"/>
+            <TextBlock Text="Цена"/>
+            <TextBox Text="{Binding Price, UpdateSourceTrigger=PropertyChanged}" Margin="0,0,0,10"/>
+            <TextBlock Text="Срок годности (ГГГГ-ММ-ДД)"/>
+            <TextBox Text="{Binding Date, UpdateSourceTrigger=PropertyChanged}" Margin="0,0,0,10"/>
+            <CheckBox Content="Есть в наличии" IsChecked="{Binding IsAvailable}" Margin="0,0,0,15"/>
             <WrapPanel>
                 <Button Content="Сохранить всё" Click="Put_Click" Margin="0,0,10,10"/>
-                <Button Content="Изменить выбранное" Click="Patch_Click" Margin="0,0,10,10"/>
+                <Button Content="Изменить часть" Click="Patch_Click" Margin="0,0,10,10"/>
                 <Button Content="Удалить" Click="Delete_Click" Margin="0,0,10,10"/>
             </WrapPanel>
         </StackPanel>
