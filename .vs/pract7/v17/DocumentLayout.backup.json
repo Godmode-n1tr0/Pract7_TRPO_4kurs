@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\st310-10\\Desktop\\Shengals\\Trpo_Code\\Practika_7_Shengals\\pract7\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A05BF8CB-25BC-4DF5-A4F5-84380FAA263A}|pract7.csproj|c:\\users\\st310-10\\desktop\\shengals\\trpo_code\\practika_7_shengals\\pract7\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A05BF8CB-25BC-4DF5-A4F5-84380FAA263A}|pract7.csproj|solutionrelative:mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\st310-10\\Desktop\\Shengals\\Trpo_Code\\Practika_7_Shengals\\pract7\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "MainWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\st310-10\\Desktop\\Shengals\\Trpo_Code\\Practika_7_Shengals\\pract7\\MainWindow.xaml.cs",
+              "RelativeToolTip": "MainWindow.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-22T04:48:34.037Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

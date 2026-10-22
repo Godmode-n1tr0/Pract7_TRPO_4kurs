@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "/hhxvoiWNW0=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\st310-10\\Desktop\\Shengals\\Trpo_Code\\Practika_7_Shengals\\pract7\\pract7.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\st310-10\\.nuget\\packages\\materialdesigncolors\\3.1.0\\materialdesigncolors.3.1.0.nupkg.sha512",
+    "C:\\Users\\st310-10\\.nuget\\packages\\materialdesignthemes\\5.1.0\\materialdesignthemes.5.1.0.nupkg.sha512",
+    "C:\\Users\\st310-10\\.nuget\\packages\\microsoft.xaml.behaviors.wpf\\1.1.39\\microsoft.xaml.behaviors.wpf.1.1.39.nupkg.sha512"
+  ],
+  "logs": []
+}
