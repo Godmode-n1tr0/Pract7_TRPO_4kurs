@@ -40,7 +40,7 @@ public partial class MainPage : Page
         window.MainFrame.Navigate(page);
     }
 
-    public async Task LoadMedicines()
+    public async Task LoadMedicinesAsync()
     {
         if (busy) return;
         busy = true;
@@ -66,9 +66,9 @@ public partial class MainPage : Page
         }
     }
 
-    async void Refresh_Click(object sender, RoutedEventArgs e)
+    async void Refresh_ClickAsync(object sender, RoutedEventArgs e)
     {
-        await LoadMedicines();
+        await LoadMedicinesAsync();
     }
 
     void New_Click(object sender, RoutedEventArgs e)
@@ -77,7 +77,7 @@ public partial class MainPage : Page
         ShowPage(new AddPage(this));
     }
 
-    async void Open_Click(object sender, RoutedEventArgs e)
+    async void Open_ClickAsync(object sender, RoutedEventArgs e)
     {
         if (busy) return;
         if (SelectedMedicine == null)

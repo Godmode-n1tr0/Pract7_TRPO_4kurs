@@ -18,7 +18,7 @@ public partial class AddPage : Page
         DataContext = form;
     }
 
-    async void Create_Click(object sender, RoutedEventArgs e)
+    async void Create_ClickAsync(object sender, RoutedEventArgs e)
     {
         if (busy) return;
         var medicine = form.ReadMedicine();
@@ -29,7 +29,7 @@ public partial class AddPage : Page
             using var response = await mainPage.Client.PostAsJsonAsync(mainPage.GetAddress(), medicine);
             response.EnsureSuccessStatusCode();
             MessageBox.Show("Лекарство добавлено.");
-            await mainPage.LoadMedicines();
+            await mainPage.LoadMedicinesAsync();
             mainPage.ShowPage(mainPage);
         }
         catch (Exception error)

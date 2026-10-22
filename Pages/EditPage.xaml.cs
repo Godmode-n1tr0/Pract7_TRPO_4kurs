@@ -21,7 +21,7 @@ public partial class EditPage : Page
         DataContext = form;
     }
 
-    async void Put_Click(object sender, RoutedEventArgs e)
+    async void Put_ClickAsync(object sender, RoutedEventArgs e)
     {
         if (busy) return;
         var medicine = form.ReadMedicine();
@@ -34,7 +34,7 @@ public partial class EditPage : Page
                 mainPage.GetAddress("/" + original.Id), medicine);
             response.EnsureSuccessStatusCode();
             MessageBox.Show("Лекарство изменено.");
-            await mainPage.LoadMedicines();
+            await mainPage.LoadMedicinesAsync();
             mainPage.ShowPage(mainPage);
         }
         catch (Exception error)
@@ -47,7 +47,7 @@ public partial class EditPage : Page
         }
     }
 
-    async void Patch_Click(object sender, RoutedEventArgs e)
+    async void Patch_ClickAsync(object sender, RoutedEventArgs e)
     {
         if (busy) return;
         var medicine = form.ReadMedicine();
@@ -72,7 +72,7 @@ public partial class EditPage : Page
                 mainPage.GetAddress("/" + original.Id), changes);
             response.EnsureSuccessStatusCode();
             MessageBox.Show("Изменённые поля сохранены.");
-            await mainPage.LoadMedicines();
+            await mainPage.LoadMedicinesAsync();
             mainPage.ShowPage(mainPage);
         }
         catch (Exception error)
@@ -85,7 +85,7 @@ public partial class EditPage : Page
         }
     }
 
-    async void Delete_Click(object sender, RoutedEventArgs e)
+    async void Delete_ClickAsync(object sender, RoutedEventArgs e)
     {
         if (busy) return;
         if (MessageBox.Show("Удалить лекарство?", "Удаление", MessageBoxButton.YesNo)
@@ -96,7 +96,7 @@ public partial class EditPage : Page
             using var response = await mainPage.Client.DeleteAsync(mainPage.GetAddress("/" + original.Id));
             response.EnsureSuccessStatusCode();
             MessageBox.Show("Лекарство удалено.");
-            await mainPage.LoadMedicines();
+            await mainPage.LoadMedicinesAsync();
             mainPage.ShowPage(mainPage);
         }
         catch (Exception error)

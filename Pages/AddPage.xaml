@@ -16,7 +16,7 @@
             <TextBox Text="{Binding Date, UpdateSourceTrigger=PropertyChanged}" Margin="0,0,0,10"/>
             <CheckBox Content="Есть в наличии" IsChecked="{Binding IsAvailable}" Margin="0,0,0,15"/>
             <WrapPanel>
-                <Button Content="Добавить" Click="Create_Click" Margin="0,0,10,10"/>
+                <Button Content="Добавить" Click="Create_ClickAsync" Margin="0,0,10,10"/>
             </WrapPanel>
         </StackPanel>
     </ScrollViewer>
